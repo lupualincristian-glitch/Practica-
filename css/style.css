@@ -1,0 +1,72 @@
+/* Variabile pentru culorile din cerințe */
+:root {
+    --primary-gold: #C9A96E;
+    --accent-blue: #1A237E;
+    --light-bg: #fdfbf7; /* crem neutru */
+    --dark-neutral: #1a1a1a;
+    --font-titles: 'Playfair Display', serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--light-bg);
+    color: var(--dark-neutral);
+    padding-top: 56px; /* Pentru a nu ascunde conținutul sub meniul fix */
+}
+
+/* Stiluri pentru Titluri */
+h1, h2, h3, h4, h5, h6, .font-title {
+    font-family: var(--font-titles);
+}
+
+/* Elemente personalizate bazate pe cerințe */
+.text-gold {
+    color: var(--primary-gold) !important;
+}
+
+.bg-gold {
+    background-color: var(--primary-gold) !important;
+}
+
+.btn-gold {
+    background-color: var(--primary-gold);
+    color: #fff;
+    border: 1px solid var(--primary-gold);
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: transparent;
+    color: var(--primary-gold);
+    border-color: var(--primary-gold);
+}
+
+/* Navigarea */
+.navbar-nav .nav-link.active {
+    color: var(--primary-gold) !important;
+    font-weight: 600;
+}
+/* Fundal suplimentar crem deschis */
+.bg-light-custom {
+    background-color: #fbf9f4 !important;
+}
+
+/* Limitare lățime text testimoniale pentru lizibilitate */
+.max-w-700 {
+    max-width: 700px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Distanțare litere pentru un aspect elegant */
+.tracking-wide {
+    letter-spacing: 2px;
+}
+
+/* Asigură-te că butoanele de carousel au contrast pe fundal deschis */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-size: 50%;
+}

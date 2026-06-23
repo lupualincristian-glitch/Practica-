@@ -1,72 +1,78 @@
-/* Variabile pentru culorile din cerințe */
-:root {
-    --primary-gold: #C9A96E;
-    --accent-blue: #1A237E;
-    --light-bg: #fdfbf7; /* crem neutru */
-    --dark-neutral: #1a1a1a;
-    --font-titles: 'Playfair Display', serif;
-    --font-body: 'Open Sans', sans-serif;
-}
-
+/* ==========================================================================
+   1. Stiluri Globale
+   ========================================================================== */
 body {
-    font-family: var(--font-body);
-    background-color: var(--light-bg);
-    color: var(--dark-neutral);
-    padding-top: 56px; /* Pentru a nu ascunde conținutul sub meniul fix */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #faf8f5;
+    color: #333;
+    padding-top: 76px; /* Ajustare pentru navbar-ul fix */
 }
 
-/* Stiluri pentru Titluri */
-h1, h2, h3, h4, h5, h6, .font-title {
-    font-family: var(--font-titles);
+/* ==========================================================================
+   2. Tipografie și Culori
+   ========================================================================== */
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
 }
 
-/* Elemente personalizate bazate pe cerințe */
 .text-gold {
-    color: var(--primary-gold) !important;
+    color: #c5a880 !important;
 }
 
 .bg-gold {
-    background-color: var(--primary-gold) !important;
+    background-color: #c5a880 !important;
 }
 
-.btn-gold {
-    background-color: var(--primary-gold);
+/* ==========================================================================
+   3. Elemente de Design Facilități
+   ========================================================================== */
+.line-separator {
+    width: 80px;
+    height: 3px;
+    margin-bottom: 2rem;
+}
+
+.img-facility {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+/* Efect de zoom la trecerea mouse-ului */
+.img-facility:hover {
+    transform: scale(1.02);
+}
+
+/* Stilizare liste cu iconițe */
+.list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #555;
+}
+
+.list-unstyled li i {
+    width: 25px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   4. Navigație și Footer
+   ========================================================================== */
+.navbar {
+    background-color: #1a1a1a !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #1a1a1a;
     color: #fff;
-    border: 1px solid var(--primary-gold);
-    transition: all 0.3s ease;
-}
-
-.btn-gold:hover {
-    background-color: transparent;
-    color: var(--primary-gold);
-    border-color: var(--primary-gold);
-}
-
-/* Navigarea */
-.navbar-nav .nav-link.active {
-    color: var(--primary-gold) !important;
-    font-weight: 600;
-}
-/* Fundal suplimentar crem deschis */
-.bg-light-custom {
-    background-color: #fbf9f4 !important;
-}
-
-/* Limitare lățime text testimoniale pentru lizibilitate */
-.max-w-700 {
-    max-width: 700px;
-}
-
-.italic {
-    font-style: italic;
-}
-
-/* Distanțare litere pentru un aspect elegant */
-.tracking-wide {
-    letter-spacing: 2px;
-}
-
-/* Asigură-te că butoanele de carousel au contrast pe fundal deschis */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-size: 50%;
+    padding: 2rem 0;
+    margin-top: 3rem;
 }

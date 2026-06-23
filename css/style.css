@@ -1,16 +1,12 @@
-/* ==========================================================================
-   1. Stiluri Globale
-   ========================================================================== */
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #faf8f5;
     color: #333;
-    padding-top: 76px; /* Ajustare pentru navbar-ul fix */
+    padding-top: 76px;
 }
 
-/* ==========================================================================
-   2. Tipografie și Culori
-   ========================================================================== */
+
 h1, h2, h3, .navbar-brand {
     font-family: 'Playfair Display', serif;
 }
@@ -23,9 +19,7 @@ h1, h2, h3, .navbar-brand {
     background-color: #c5a880 !important;
 }
 
-/* ==========================================================================
-   3. Elemente de Design Facilități
-   ========================================================================== */
+
 .line-separator {
     width: 80px;
     height: 3px;
@@ -40,12 +34,10 @@ h1, h2, h3, .navbar-brand {
     transition: transform 0.4s ease;
 }
 
-/* Efect de zoom la trecerea mouse-ului */
 .img-facility:hover {
     transform: scale(1.02);
 }
 
-/* Stilizare liste cu iconițe */
 .list-unstyled li {
     margin-bottom: 10px;
     font-size: 1.05rem;
@@ -57,9 +49,7 @@ h1, h2, h3, .navbar-brand {
     text-align: center;
 }
 
-/* ==========================================================================
-   4. Navigație și Footer
-   ========================================================================== */
+
 .navbar {
     background-color: #1a1a1a !important;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -68,6 +58,12 @@ h1, h2, h3, .navbar-brand {
 .navbar-nav .nav-link {
     font-size: 0.85rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c5a880 !important;
 }
 
 footer {
@@ -75,4 +71,92 @@ footer {
     color: #fff;
     padding: 2rem 0;
     margin-top: 3rem;
+}
+
+#bookingForm, #contactForm {
+    background: #ffffff;
+    padding: 40px !important;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.form-control, .form-select {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #c5a880;
+    box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.2);
+}
+
+.btn-gold {
+    background-color: #c5a880;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    padding: 15px !important;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn-gold:hover {
+    background-color: #a88d67;
+    color: white;
+}
+
+#totalPrice {
+    color: #c5a880;
+}
+
+.card {
+    border-radius: 8px !important;
+    border: none !important;
+    background: #ffffff !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05) !important;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 1.2rem;
+    color: #c5a880;
+    width: 30px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #a0a0a0;
+    padding: 60px 0 20px 0;
+    margin-top: 50px;
+}
+
+footer h5 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+
+footer ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer ul li a:hover {
+    color: #c5a880; 
+}
+
+
+.text-gold {
+    color: #c5a880 !important;
 }

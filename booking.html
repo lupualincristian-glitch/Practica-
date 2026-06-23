@@ -8,19 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand text-gold" href="index.html">Grand Palace</a>
+            <a class="navbar-brand fw-bold" href="index.html">Grand Palace</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rooms.html">Camere</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">Facilități</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Galerie</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Rezervare</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <main class="py-5 mt-5">
-        <div class="container" style="max-width: 600px;">
-            <h1 class="text-center mb-4">Rezervare Online</h1>
+        <div class="container" style="max-width: 700px; margin-top: 50px;">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">Rezervă Sejurul Tău</h1>
+                <p class="text-muted">Alege perioada și camera dorită pentru o experiență memorabilă.</p>
+            </div>
+            
             <form id="bookingForm" class="bg-white p-4 rounded shadow-sm">
                 <div class="mb-3">
                     <label class="form-label">Nume Complet</label>
-                    <input type="text" id="bookingName" class="form-select form-control" required>
+                    <input type="text" id="bookingName" class="form-control" placeholder="Introduceți numele" required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Tip Cameră</label>
@@ -43,13 +61,42 @@
                 
                 <div class="p-3 bg-light rounded text-center mb-3">
                     <span class="fw-bold">Preț Total Estimat: </span>
-                    <span id="totalPrice" class="text-gold fs-4 fw-bold">0 €</span>
+                    <span id="totalPrice" class="fs-4 fw-bold">0 €</span>
                 </div>
 
                 <button type="submit" class="btn btn-gold w-100 py-2">Trimite Rezervarea</button>
             </form>
         </div>
     </main>
+
+    
+    <footer class="text-white pt-5 pb-3" style="background-color: #1a1a1a;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-gold" style="font-family: 'Playfair Display', serif;">GRAND PALACE</h5>
+                    <p style="color: #a0a0a0;">Definiția rafinamentului și a confortului de 5 stele. Vă oferim experiențe memorabile în inima orașului.</p>
+                </div>
+                <div class="col-lg-4 mb-4 text-center">
+                    <h5 class="text-white">Linkuri Rapide</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none" style="color: #a0a0a0;">Acasă</a></li>
+                        <li><a href="rooms.html" class="text-decoration-none" style="color: #a0a0a0;">Camere</a></li>
+                        <li><a href="facilities.html" class="text-decoration-none" style="color: #a0a0a0;">Facilități</a></li>
+                        <li><a href="contact.html" class="text-decoration-none" style="color: #a0a0a0;">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4 text-end">
+                    <h5 class="text-white">Urmărește-ne</h5>
+                    <p style="color: #a0a0a0;">+40 722 000 000</p>
+                </div>
+            </div>
+            <hr style="border-top: 1px solid #333;">
+            <div class="text-center pt-2" style="color: #a0a0a0;">
+                <p>&copy; 2026 Hotel Grand Palace. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
 
     <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
